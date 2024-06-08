@@ -13,19 +13,20 @@ const getResult = () => {
 const getMessage = () => {
     return `${newMessage.message} ${newMessage.name}`
 }
-export const FirstApp = ({title, subTitle}) => {
-
-
-
+export const FirstApp = ({title, subTitle, name}) => {
 
   return (
     <>
-        <h1>{getMessage()}</h1>
-        <h2>{getResult()}</h2>
-        {/* <code>{JSON.stringify(newMessage)}</code> */}
-        <p>Soy un subtitulo</p>
-        <p>{title}</p>
+        <h1 data-testid="test-title"> {title} </h1>
         <p>{subTitle}</p>
+        <p>{subTitle}</p>
+        <p>{name}</p>
+        {/* <h1>{getMessage()}</h1>
+        <h2>{getResult()}</h2> */}
+        {/* <code>{JSON.stringify(newMessage)}</code> */}
+        {/* <p>Soy un subtitulo</p> */}
+        {/* <p>{subTitle}</p> */}
+        {/* <p>{name}</p> */}
     </>
   )
 }
@@ -36,5 +37,7 @@ FirstApp.propTypes = {
 }
 
 FirstApp.defaultProps = {
-    title: 'No hay titulo'
+    title: 'No hay titulo',
+    subTitle: 'No hay subtitulo',
+    name: 'Edgar'
 }
