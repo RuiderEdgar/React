@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en <GiftItem/> Debe de evaluar el snapshot 1`] = `
+<div>
+  <div
+    class="card"
+  >
+    <img
+      alt="Pokemon"
+      src="https://media2.giphy.com/media/fSvqyvXn1M3btN8sDh/giphy.gif?cid=89873216fptjum8d5q4prwg2n7cnqc461pldr3gm7jerfhch&ep=v1_gifs_search&rid=giphy.gif&ct=g"
+    />
+    <p>
+      Pokemon
+    </p>
+  </div>
+</div>
+`;
+
+exports[`Pruebas en GiftItem Debe de evaluar el snapshot 1`] = `
+<div>
+  <div
+    class="card"
+  >
+    <img
+      alt="Pokemon"
+      src="https://media2.giphy.com/media/fSvqyvXn1M3btN8sDh/giphy.gif?cid=89873216fptjum8d5q4prwg2n7cnqc461pldr3gm7jerfhch&ep=v1_gifs_search&rid=giphy.gif&ct=g"
+    />
+    <p>
+      Pokemon
+    </p>
+  </div>
+</div>
+`;

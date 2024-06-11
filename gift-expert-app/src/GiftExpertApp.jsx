@@ -1,6 +1,6 @@
 import { useState } from "react"
-import { AddCategory } from "./components/AddCategory"
-import { GifGrid } from "./components/GifGrid"
+import { AddCategory, GifGrid } from "./components"
+// import { GifGrid } from "./components/GifGrid"
 
 export const GiftExpertApp = () => {
     const [categories, setCategories] = useState(['One punch', 'Dragon ball'])
@@ -12,7 +12,6 @@ export const GiftExpertApp = () => {
         //Tarea agregar una nueva categoría
         // const newCategory = 'Hyundai'
         // setCategories([newCategory, ...categories])
-
     }
   return (
     <>
