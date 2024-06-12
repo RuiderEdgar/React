@@ -13,22 +13,18 @@ export const GiftExpertApp = () => {
         // const newCategory = 'Hyundai'
         // setCategories([newCategory, ...categories])
     }
-  return (
-    <>
-        <h1>GiftExpertApp</h1>
-
-        <AddCategory 
-            // setCategories={setCategories}
-            onNewCategory={ onAddCategory}
-        />
-
-
-        {
-            categories.map((category) => (
-                <GifGrid key={category} category={category}/>
-            ))
-        }
-        
-    </>
-  )
+    return (
+        <>
+            <h1>GiftExpertApp</h1>
+            <AddCategory 
+                // setCategories={setCategories}
+                onNewCategory={ onAddCategory}
+            />
+            {
+                categories.map((category) => (
+                    <GifGrid key={category} category={category}/>
+                ))
+            }
+        </>
+    )
 }

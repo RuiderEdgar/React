@@ -1,5 +1,5 @@
 import { fireEvent, render, screen } from "@testing-library/react"
-import { AddCategory } from "../components/AddCategory"
+import { AddCategory } from "../../components/AddCategory"
 
 describe('Pruebas en <AddCategory/>', () => {
     test('Debe de cambiar el valor de la caja de texto', () => {
@@ -16,7 +16,7 @@ describe('Pruebas en <AddCategory/>', () => {
         render(<AddCategory onNewCategory={onNewCategory} />);
 
         const input = screen.getByRole("textbox");
-        //Meter un area label para que reconozca que es un form
+        //Meter un aria label en el componente para que reconozca que es un form
         const form = screen.getByRole("form");
 
         fireEvent.input(input, { target: { value: "Saitama" } });

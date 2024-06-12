@@ -1,5 +1,5 @@
 import { render, screen } from "@testing-library/react";
-import { GiftItem } from "../components/GiftItem"
+import { GiftItem } from "../../components/GiftItem"
 
 describe('Pruebas en <GiftItem/>', ()=>{
     const title = "Pokemon";
