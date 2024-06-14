@@ -9,12 +9,14 @@ import ReactDOM from 'react-dom/client'
 // import { FocusScreen } from './04-useRef/FocusScreen'
 // import { Layout } from './05-useLayout/Layout'
 // import { Memorize } from './06-memos/Memorize'
-import { MemoHook } from './06-memos/MemoHook'
-
+// import { MemoHook } from './06-memos/MemoHook'
 import './index.css'
+// import { CallbackHook } from './06-memos/CallbackHook'
+import { Padre } from './07-tarea-memo/Padre'
+
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <MemoHook/>
+    <Padre/>
   </React.StrictMode>,
 )
