@@ -1,16 +1,16 @@
-import { Navigate, Route, Routes } from "react-router-dom"
+import { Navigate, Route, Routes} from "react-router-dom"
 import { HomePage } from "./HomePage"
 import {LoginPage} from "./LoginPage"
 import {AboutPage} from "./AboutPage"
+import { Navbar } from "./Navbar"
+import { UserProvider } from "./context/UserProvider"
 
 export const MainApp = () => {
   return (
-    <>
+    <UserProvider>
       <h1>MainApp</h1>
+      <Navbar/>
       <hr />
-      <a href="/">Home</a>
-      <a href="/about">About</a>
-      <a href="/login">Login</a>
       
       <Routes>
         <Route path="/" element={<HomePage/>}/>
@@ -22,6 +22,6 @@ export const MainApp = () => {
         <Route path="/*" element={<Navigate to={<AboutPage/>}/>}/>
 
       </Routes>
-    </>
+    </UserProvider>
   )
 }
