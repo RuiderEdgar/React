@@ -14,7 +14,7 @@ export const MainApp = () => {
       
       <Routes>
         <Route path="/" element={<HomePage/>}/>
-        <Route path="login" element={<LoginPage/>}/>
+        <Route path="login" element={<LoginPage/>} aria-label="login"/>
         <Route path="about" element={<AboutPage/>}/>
 
         {/* <Route path="/*" element={<LoginPage/>}/> */}
